@@ -7,4 +7,6 @@ target 'jenkinsTest' do
 
   # Pods for jenkinsTest
 	pod 'Alamofire'
+	pod 'Kingfisher'
+  pod 'WLM3U'
 end

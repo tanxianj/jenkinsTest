@@ -1,16 +1,25 @@
 PODS:
   - Alamofire (4.9.1)
+  - Kingfisher (4.10.1)
+  - WLM3U (0.1.4):
+    - Alamofire
 
 DEPENDENCIES:
   - Alamofire
+  - Kingfisher
+  - WLM3U
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - Kingfisher
+    - WLM3U
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  WLM3U: 6d57596cc3993badc799ab1121ac9e1bb8b15d2a
 
-PODFILE CHECKSUM: 9dec6dd81bdeafde8240c4e99bf702d01377cad9
+PODFILE CHECKSUM: 32a1b93f758ded3b5a8c3dc19dc5a7127cef0697
 
 COCOAPODS: 1.9.3

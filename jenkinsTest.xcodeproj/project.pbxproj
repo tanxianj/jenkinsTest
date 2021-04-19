@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		74DAF045BE07C7EA80EC93BD /* Pods_jenkinsTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E37D8A00E6957C4BFC199C7 /* Pods_jenkinsTest.framework */; };
+		9605B084262D53DF00A62D2D /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B083262D53DF00A62D2D /* VideoTableViewController.swift */; };
+		9605B0A2262D677D00A62D2D /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B0A1262D677D00A62D2D /* PlayViewController.swift */; };
+		9605B0A9262D6DE000A62D2D /* M3u8ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B0A8262D6DE000A62D2D /* M3u8ResourceLoader.swift */; };
 		967BCCA5262D1EF0005987DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967BCCA4262D1EF0005987DA /* AppDelegate.swift */; };
 		967BCCA7262D1EF0005987DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967BCCA6262D1EF0005987DA /* SceneDelegate.swift */; };
 		967BCCA9262D1EF0005987DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967BCCA8262D1EF0005987DA /* ViewController.swift */; };
@@ -15,12 +18,18 @@
 		967BCCAF262D1EF0005987DA /* jenkinsTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 967BCCAD262D1EF0005987DA /* jenkinsTest.xcdatamodeld */; };
 		967BCCB1262D1EF2005987DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967BCCB0262D1EF2005987DA /* Assets.xcassets */; };
 		967BCCB4262D1EF2005987DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967BCCB2262D1EF2005987DA /* LaunchScreen.storyboard */; };
+		967BCCC1262D2EF0005987DA /* imageUrl.json in Resources */ = {isa = PBXBuildFile; fileRef = 967BCCC0262D2EF0005987DA /* imageUrl.json */; };
+		967BCCC9262D32A9005987DA /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967BCCC8262D32A9005987DA /* HttpManager.swift */; };
+		967BCCD6262D43F8005987DA /* ProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967BCCD5262D43F8005987DA /* ProtocolViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E37D8A00E6957C4BFC199C7 /* Pods_jenkinsTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_jenkinsTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C70FD92CF09E1A8309C25CD /* Pods-jenkinsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jenkinsTest.release.xcconfig"; path = "Target Support Files/Pods-jenkinsTest/Pods-jenkinsTest.release.xcconfig"; sourceTree = "<group>"; };
 		61D866C268BC32B95F7A557D /* Pods-jenkinsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-jenkinsTest.debug.xcconfig"; path = "Target Support Files/Pods-jenkinsTest/Pods-jenkinsTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9605B083262D53DF00A62D2D /* VideoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
+		9605B0A1262D677D00A62D2D /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
+		9605B0A8262D6DE000A62D2D /* M3u8ResourceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M3u8ResourceLoader.swift; sourceTree = "<group>"; };
 		967BCCA1262D1EF0005987DA /* jenkinsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jenkinsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967BCCA4262D1EF0005987DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		967BCCA6262D1EF0005987DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +39,9 @@
 		967BCCB0262D1EF2005987DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		967BCCB3262D1EF2005987DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		967BCCB5262D1EF2005987DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		967BCCC0262D2EF0005987DA /* imageUrl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = imageUrl.json; sourceTree = "<group>"; };
+		967BCCC8262D32A9005987DA /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
+		967BCCD5262D43F8005987DA /* ProtocolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +62,26 @@
 				61D866C268BC32B95F7A557D /* Pods-jenkinsTest.debug.xcconfig */,
 				4C70FD92CF09E1A8309C25CD /* Pods-jenkinsTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9605B07E262D520600A62D2D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				967BCCD5262D43F8005987DA /* ProtocolViewController.swift */,
+				967BCCA8262D1EF0005987DA /* ViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9605B07F262D520900A62D2D /* video */ = {
+			isa = PBXGroup;
+			children = (
+				9605B083262D53DF00A62D2D /* VideoTableViewController.swift */,
+				9605B0A1262D677D00A62D2D /* PlayViewController.swift */,
+				9605B0A8262D6DE000A62D2D /* M3u8ResourceLoader.swift */,
+			);
+			path = video;
 			sourceTree = "<group>";
 		};
 		967BCC98262D1EF0005987DA = {
@@ -75,16 +105,51 @@
 		967BCCA3262D1EF0005987DA /* jenkinsTest */ = {
 			isa = PBXGroup;
 			children = (
-				967BCCA4262D1EF0005987DA /* AppDelegate.swift */,
-				967BCCA6262D1EF0005987DA /* SceneDelegate.swift */,
-				967BCCA8262D1EF0005987DA /* ViewController.swift */,
-				967BCCAA262D1EF0005987DA /* Main.storyboard */,
+				967BCCD3262D43B8005987DA /* Main */,
+				967BCCD2262D43AF005987DA /* AppDelegate */,
+				967BCCC7262D328A005987DA /* request */,
+				967BCCBF262D2ED5005987DA /* data */,
 				967BCCB0262D1EF2005987DA /* Assets.xcassets */,
 				967BCCB2262D1EF2005987DA /* LaunchScreen.storyboard */,
 				967BCCB5262D1EF2005987DA /* Info.plist */,
 				967BCCAD262D1EF0005987DA /* jenkinsTest.xcdatamodeld */,
 			);
 			path = jenkinsTest;
+			sourceTree = "<group>";
+		};
+		967BCCBF262D2ED5005987DA /* data */ = {
+			isa = PBXGroup;
+			children = (
+				967BCCC0262D2EF0005987DA /* imageUrl.json */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		967BCCC7262D328A005987DA /* request */ = {
+			isa = PBXGroup;
+			children = (
+				967BCCC8262D32A9005987DA /* HttpManager.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		967BCCD2262D43AF005987DA /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				967BCCA4262D1EF0005987DA /* AppDelegate.swift */,
+				967BCCA6262D1EF0005987DA /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		967BCCD3262D43B8005987DA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9605B07F262D520900A62D2D /* video */,
+				9605B07E262D520600A62D2D /* Home */,
+				967BCCAA262D1EF0005987DA /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		9F6381423840CD2BCD25A193 /* Frameworks */ = {
@@ -157,6 +222,7 @@
 				967BCCB4262D1EF2005987DA /* LaunchScreen.storyboard in Resources */,
 				967BCCB1262D1EF2005987DA /* Assets.xcassets in Resources */,
 				967BCCAC262D1EF0005987DA /* Main.storyboard in Resources */,
+				967BCCC1262D2EF0005987DA /* imageUrl.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,9 +275,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9605B0A2262D677D00A62D2D /* PlayViewController.swift in Sources */,
 				967BCCA9262D1EF0005987DA /* ViewController.swift in Sources */,
+				967BCCC9262D32A9005987DA /* HttpManager.swift in Sources */,
 				967BCCA5262D1EF0005987DA /* AppDelegate.swift in Sources */,
 				967BCCAF262D1EF0005987DA /* jenkinsTest.xcdatamodeld in Sources */,
+				9605B0A9262D6DE000A62D2D /* M3u8ResourceLoader.swift in Sources */,
+				9605B084262D53DF00A62D2D /* VideoTableViewController.swift in Sources */,
+				967BCCD6262D43F8005987DA /* ProtocolViewController.swift in Sources */,
 				967BCCA7262D1EF0005987DA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
