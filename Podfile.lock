@@ -1,25 +1,37 @@
 PODS:
   - Alamofire (4.9.1)
   - Kingfisher (4.10.1)
+  - NicooPlayer (1.3.6):
+    - SnapKit
+  - Reachability (3.2)
+  - SnapKit (4.2.0)
   - WLM3U (0.1.4):
     - Alamofire
 
 DEPENDENCIES:
   - Alamofire
   - Kingfisher
+  - NicooPlayer (~> 1.3.6)
+  - Reachability
   - WLM3U
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - Kingfisher
+    - NicooPlayer
+    - Reachability
+    - SnapKit
     - WLM3U
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  NicooPlayer: bc73270444b8370ead3fedcfdd965b833821160d
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   WLM3U: 6d57596cc3993badc799ab1121ac9e1bb8b15d2a
 
-PODFILE CHECKSUM: 32a1b93f758ded3b5a8c3dc19dc5a7127cef0697
+PODFILE CHECKSUM: fc9780de930aaa2e3abdcf8ce7abf120e364cfe8
 
 COCOAPODS: 1.9.3

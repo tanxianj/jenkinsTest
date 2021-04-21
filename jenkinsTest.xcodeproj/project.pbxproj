@@ -11,6 +11,40 @@
 		9605B084262D53DF00A62D2D /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B083262D53DF00A62D2D /* VideoTableViewController.swift */; };
 		9605B0A2262D677D00A62D2D /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B0A1262D677D00A62D2D /* PlayViewController.swift */; };
 		9605B0A9262D6DE000A62D2D /* M3u8ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B0A8262D6DE000A62D2D /* M3u8ResourceLoader.swift */; };
+		9605B252262FC08800A62D2D /* HYPlayerCacheListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B227262FC08700A62D2D /* HYPlayerCacheListCell.swift */; };
+		9605B253262FC08800A62D2D /* HYPlayerCacheListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B228262FC08700A62D2D /* HYPlayerCacheListView.swift */; };
+		9605B254262FC08800A62D2D /* HYCacheProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B229262FC08700A62D2D /* HYCacheProgressView.swift */; };
+		9605B255262FC08800A62D2D /* String+HYEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B22C262FC08800A62D2D /* String+HYEncryption.swift */; };
+		9605B256262FC08800A62D2D /* HYResponseExpandButtton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B22D262FC08800A62D2D /* HYResponseExpandButtton.swift */; };
+		9605B257262FC08800A62D2D /* HYDefaultVideoCacheLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B22F262FC08800A62D2D /* HYDefaultVideoCacheLocation.swift */; };
+		9605B258262FC08800A62D2D /* HYMediaCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B230262FC08800A62D2D /* HYMediaCacheManager.swift */; };
+		9605B259262FC08800A62D2D /* HYMediaCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B231262FC08800A62D2D /* HYMediaCryptor.swift */; };
+		9605B25A262FC08800A62D2D /* HYStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B232262FC08800A62D2D /* HYStorage.swift */; };
+		9605B25B262FC08800A62D2D /* HYMediaCacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B233262FC08800A62D2D /* HYMediaCacher.swift */; };
+		9605B25C262FC08800A62D2D /* HYMediaCacheDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B235262FC08800A62D2D /* HYMediaCacheDelegate.swift */; };
+		9605B25D262FC08800A62D2D /* HYMediaCacherDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B236262FC08800A62D2D /* HYMediaCacherDelegate.swift */; };
+		9605B25E262FC08800A62D2D /* HYMediaCacheLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B237262FC08800A62D2D /* HYMediaCacheLocation.swift */; };
+		9605B25F262FC08800A62D2D /* HYVideoCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B238262FC08800A62D2D /* HYVideoCacheManager.swift */; };
+		9605B260262FC08800A62D2D /* HYPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9605B23A262FC08800A62D2D /* HYPlayer.bundle */; };
+		9605B261262FC08800A62D2D /* HYPlayerCommonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B23C262FC08800A62D2D /* HYPlayerCommonConfig.swift */; };
+		9605B262262FC08800A62D2D /* HYPlayerConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B23D262FC08800A62D2D /* HYPlayerConstant.swift */; };
+		9605B263262FC08800A62D2D /* HYAudiovisualCommonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B23E262FC08800A62D2D /* HYAudiovisualCommonModel.swift */; };
+		9605B264262FC08800A62D2D /* HYCacheStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B240262FC08800A62D2D /* HYCacheStorage.swift */; };
+		9605B265262FC08800A62D2D /* HYFileDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B241262FC08800A62D2D /* HYFileDirectory.swift */; };
+		9605B266262FC08800A62D2D /* HYPlayerCommonViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B243262FC08800A62D2D /* HYPlayerCommonViewDelegate.swift */; };
+		9605B267262FC08800A62D2D /* HYPlayerCommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B245262FC08800A62D2D /* HYPlayerCommonView.swift */; };
+		9605B268262FC08800A62D2D /* HYAudiovisualCommonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B246262FC08800A62D2D /* HYAudiovisualCommonManager.swift */; };
+		9605B269262FC08800A62D2D /* HYMoreFunctionSpeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B249262FC08800A62D2D /* HYMoreFunctionSpeedCollectionViewCell.swift */; };
+		9605B26A262FC08800A62D2D /* HYSpeedyRemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B24A262FC08800A62D2D /* HYSpeedyRemindView.swift */; };
+		9605B26B262FC08800A62D2D /* HYEndPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B24B262FC08800A62D2D /* HYEndPlayView.swift */; };
+		9605B26C262FC08800A62D2D /* HYWithoutNetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B24C262FC08800A62D2D /* HYWithoutNetView.swift */; };
+		9605B26D262FC08800A62D2D /* HYFullScreenMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B24D262FC08800A62D2D /* HYFullScreenMaskView.swift */; };
+		9605B26E262FC08800A62D2D /* HYControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B24E262FC08800A62D2D /* HYControlPanelView.swift */; };
+		9605B26F262FC08800A62D2D /* HYAccelerationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B24F262FC08800A62D2D /* HYAccelerationView.swift */; };
+		9605B270262FC08800A62D2D /* HYAudioPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B250262FC08800A62D2D /* HYAudioPlayView.swift */; };
+		9605B271262FC08800A62D2D /* HYAudiovisualSpeedyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9605B251262FC08800A62D2D /* HYAudiovisualSpeedyManager.swift */; };
+		9605B2A7262FCDDD00A62D2D /* testMovie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9605B2A5262FCDDD00A62D2D /* testMovie.mp4 */; };
+		9605B2A8262FCDDD00A62D2D /* testSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9605B2A6262FCDDD00A62D2D /* testSong.mp3 */; };
 		967BCCA5262D1EF0005987DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967BCCA4262D1EF0005987DA /* AppDelegate.swift */; };
 		967BCCA7262D1EF0005987DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967BCCA6262D1EF0005987DA /* SceneDelegate.swift */; };
 		967BCCA9262D1EF0005987DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967BCCA8262D1EF0005987DA /* ViewController.swift */; };
@@ -30,6 +64,40 @@
 		9605B083262D53DF00A62D2D /* VideoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
 		9605B0A1262D677D00A62D2D /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		9605B0A8262D6DE000A62D2D /* M3u8ResourceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M3u8ResourceLoader.swift; sourceTree = "<group>"; };
+		9605B227262FC08700A62D2D /* HYPlayerCacheListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPlayerCacheListCell.swift; sourceTree = "<group>"; };
+		9605B228262FC08700A62D2D /* HYPlayerCacheListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPlayerCacheListView.swift; sourceTree = "<group>"; };
+		9605B229262FC08700A62D2D /* HYCacheProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYCacheProgressView.swift; sourceTree = "<group>"; };
+		9605B22C262FC08800A62D2D /* String+HYEncryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+HYEncryption.swift"; sourceTree = "<group>"; };
+		9605B22D262FC08800A62D2D /* HYResponseExpandButtton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYResponseExpandButtton.swift; sourceTree = "<group>"; };
+		9605B22F262FC08800A62D2D /* HYDefaultVideoCacheLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYDefaultVideoCacheLocation.swift; sourceTree = "<group>"; };
+		9605B230262FC08800A62D2D /* HYMediaCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYMediaCacheManager.swift; sourceTree = "<group>"; };
+		9605B231262FC08800A62D2D /* HYMediaCryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYMediaCryptor.swift; sourceTree = "<group>"; };
+		9605B232262FC08800A62D2D /* HYStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYStorage.swift; sourceTree = "<group>"; };
+		9605B233262FC08800A62D2D /* HYMediaCacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYMediaCacher.swift; sourceTree = "<group>"; };
+		9605B235262FC08800A62D2D /* HYMediaCacheDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYMediaCacheDelegate.swift; sourceTree = "<group>"; };
+		9605B236262FC08800A62D2D /* HYMediaCacherDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYMediaCacherDelegate.swift; sourceTree = "<group>"; };
+		9605B237262FC08800A62D2D /* HYMediaCacheLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYMediaCacheLocation.swift; sourceTree = "<group>"; };
+		9605B238262FC08800A62D2D /* HYVideoCacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYVideoCacheManager.swift; sourceTree = "<group>"; };
+		9605B23A262FC08800A62D2D /* HYPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HYPlayer.bundle; sourceTree = "<group>"; };
+		9605B23C262FC08800A62D2D /* HYPlayerCommonConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPlayerCommonConfig.swift; sourceTree = "<group>"; };
+		9605B23D262FC08800A62D2D /* HYPlayerConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPlayerConstant.swift; sourceTree = "<group>"; };
+		9605B23E262FC08800A62D2D /* HYAudiovisualCommonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYAudiovisualCommonModel.swift; sourceTree = "<group>"; };
+		9605B240262FC08800A62D2D /* HYCacheStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYCacheStorage.swift; sourceTree = "<group>"; };
+		9605B241262FC08800A62D2D /* HYFileDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYFileDirectory.swift; sourceTree = "<group>"; };
+		9605B243262FC08800A62D2D /* HYPlayerCommonViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPlayerCommonViewDelegate.swift; sourceTree = "<group>"; };
+		9605B245262FC08800A62D2D /* HYPlayerCommonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYPlayerCommonView.swift; sourceTree = "<group>"; };
+		9605B246262FC08800A62D2D /* HYAudiovisualCommonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYAudiovisualCommonManager.swift; sourceTree = "<group>"; };
+		9605B249262FC08800A62D2D /* HYMoreFunctionSpeedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYMoreFunctionSpeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		9605B24A262FC08800A62D2D /* HYSpeedyRemindView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYSpeedyRemindView.swift; sourceTree = "<group>"; };
+		9605B24B262FC08800A62D2D /* HYEndPlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYEndPlayView.swift; sourceTree = "<group>"; };
+		9605B24C262FC08800A62D2D /* HYWithoutNetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYWithoutNetView.swift; sourceTree = "<group>"; };
+		9605B24D262FC08800A62D2D /* HYFullScreenMaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYFullScreenMaskView.swift; sourceTree = "<group>"; };
+		9605B24E262FC08800A62D2D /* HYControlPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYControlPanelView.swift; sourceTree = "<group>"; };
+		9605B24F262FC08800A62D2D /* HYAccelerationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYAccelerationView.swift; sourceTree = "<group>"; };
+		9605B250262FC08800A62D2D /* HYAudioPlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYAudioPlayView.swift; sourceTree = "<group>"; };
+		9605B251262FC08800A62D2D /* HYAudiovisualSpeedyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HYAudiovisualSpeedyManager.swift; sourceTree = "<group>"; };
+		9605B2A5262FCDDD00A62D2D /* testMovie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testMovie.mp4; sourceTree = "<group>"; };
+		9605B2A6262FCDDD00A62D2D /* testSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = testSong.mp3; sourceTree = "<group>"; };
 		967BCCA1262D1EF0005987DA /* jenkinsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jenkinsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967BCCA4262D1EF0005987DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		967BCCA6262D1EF0005987DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,11 +145,156 @@
 		9605B07F262D520900A62D2D /* video */ = {
 			isa = PBXGroup;
 			children = (
+				9605B225262FC07E00A62D2D /* New Group */,
 				9605B083262D53DF00A62D2D /* VideoTableViewController.swift */,
 				9605B0A1262D677D00A62D2D /* PlayViewController.swift */,
 				9605B0A8262D6DE000A62D2D /* M3u8ResourceLoader.swift */,
 			);
 			path = video;
+			sourceTree = "<group>";
+		};
+		9605B225262FC07E00A62D2D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				9605B22A262FC08800A62D2D /* HYPlayer */,
+				9605B226262FC08700A62D2D /* HYProactiveCaching */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		9605B226262FC08700A62D2D /* HYProactiveCaching */ = {
+			isa = PBXGroup;
+			children = (
+				9605B227262FC08700A62D2D /* HYPlayerCacheListCell.swift */,
+				9605B228262FC08700A62D2D /* HYPlayerCacheListView.swift */,
+				9605B229262FC08700A62D2D /* HYCacheProgressView.swift */,
+			);
+			path = HYProactiveCaching;
+			sourceTree = "<group>";
+		};
+		9605B22A262FC08800A62D2D /* HYPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				9605B22B262FC08800A62D2D /* Extension */,
+				9605B22E262FC08800A62D2D /* Cache */,
+				9605B239262FC08800A62D2D /* Resources */,
+				9605B23B262FC08800A62D2D /* Models */,
+				9605B23F262FC08800A62D2D /* FileManager */,
+				9605B242262FC08800A62D2D /* Protocols */,
+				9605B244262FC08800A62D2D /* Player */,
+			);
+			path = HYPlayer;
+			sourceTree = "<group>";
+		};
+		9605B22B262FC08800A62D2D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9605B22C262FC08800A62D2D /* String+HYEncryption.swift */,
+				9605B22D262FC08800A62D2D /* HYResponseExpandButtton.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9605B22E262FC08800A62D2D /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				9605B22F262FC08800A62D2D /* HYDefaultVideoCacheLocation.swift */,
+				9605B230262FC08800A62D2D /* HYMediaCacheManager.swift */,
+				9605B231262FC08800A62D2D /* HYMediaCryptor.swift */,
+				9605B232262FC08800A62D2D /* HYStorage.swift */,
+				9605B233262FC08800A62D2D /* HYMediaCacher.swift */,
+				9605B234262FC08800A62D2D /* Protocols */,
+				9605B238262FC08800A62D2D /* HYVideoCacheManager.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		9605B234262FC08800A62D2D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9605B235262FC08800A62D2D /* HYMediaCacheDelegate.swift */,
+				9605B236262FC08800A62D2D /* HYMediaCacherDelegate.swift */,
+				9605B237262FC08800A62D2D /* HYMediaCacheLocation.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9605B239262FC08800A62D2D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9605B23A262FC08800A62D2D /* HYPlayer.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9605B23B262FC08800A62D2D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9605B23C262FC08800A62D2D /* HYPlayerCommonConfig.swift */,
+				9605B23D262FC08800A62D2D /* HYPlayerConstant.swift */,
+				9605B23E262FC08800A62D2D /* HYAudiovisualCommonModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9605B23F262FC08800A62D2D /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				9605B240262FC08800A62D2D /* HYCacheStorage.swift */,
+				9605B241262FC08800A62D2D /* HYFileDirectory.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
+		9605B242262FC08800A62D2D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9605B243262FC08800A62D2D /* HYPlayerCommonViewDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9605B244262FC08800A62D2D /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				9605B245262FC08800A62D2D /* HYPlayerCommonView.swift */,
+				9605B246262FC08800A62D2D /* HYAudiovisualCommonManager.swift */,
+				9605B247262FC08800A62D2D /* ChildControlViews */,
+				9605B251262FC08800A62D2D /* HYAudiovisualSpeedyManager.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		9605B247262FC08800A62D2D /* ChildControlViews */ = {
+			isa = PBXGroup;
+			children = (
+				9605B248262FC08800A62D2D /* Cells */,
+				9605B24A262FC08800A62D2D /* HYSpeedyRemindView.swift */,
+				9605B24B262FC08800A62D2D /* HYEndPlayView.swift */,
+				9605B24C262FC08800A62D2D /* HYWithoutNetView.swift */,
+				9605B24D262FC08800A62D2D /* HYFullScreenMaskView.swift */,
+				9605B24E262FC08800A62D2D /* HYControlPanelView.swift */,
+				9605B24F262FC08800A62D2D /* HYAccelerationView.swift */,
+				9605B250262FC08800A62D2D /* HYAudioPlayView.swift */,
+			);
+			path = ChildControlViews;
+			sourceTree = "<group>";
+		};
+		9605B248262FC08800A62D2D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9605B249262FC08800A62D2D /* HYMoreFunctionSpeedCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9605B2A4262FCDDD00A62D2D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9605B2A5262FCDDD00A62D2D /* testMovie.mp4 */,
+				9605B2A6262FCDDD00A62D2D /* testSong.mp3 */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		967BCC98262D1EF0005987DA = {
@@ -110,6 +323,7 @@
 				967BCCC7262D328A005987DA /* request */,
 				967BCCBF262D2ED5005987DA /* data */,
 				967BCCB0262D1EF2005987DA /* Assets.xcassets */,
+				9605B2A4262FCDDD00A62D2D /* Source */,
 				967BCCB2262D1EF2005987DA /* LaunchScreen.storyboard */,
 				967BCCB5262D1EF2005987DA /* Info.plist */,
 				967BCCAD262D1EF0005987DA /* jenkinsTest.xcdatamodeld */,
@@ -190,6 +404,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
+				ORGANIZATIONNAME = swift;
 				TargetAttributes = {
 					967BCCA0262D1EF0005987DA = {
 						CreatedOnToolsVersion = 12.4;
@@ -219,10 +434,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9605B2A7262FCDDD00A62D2D /* testMovie.mp4 in Resources */,
 				967BCCB4262D1EF2005987DA /* LaunchScreen.storyboard in Resources */,
 				967BCCB1262D1EF2005987DA /* Assets.xcassets in Resources */,
 				967BCCAC262D1EF0005987DA /* Main.storyboard in Resources */,
+				9605B260262FC08800A62D2D /* HYPlayer.bundle in Resources */,
 				967BCCC1262D2EF0005987DA /* imageUrl.json in Resources */,
+				9605B2A8262FCDDD00A62D2D /* testSong.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,14 +494,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				9605B0A2262D677D00A62D2D /* PlayViewController.swift in Sources */,
+				9605B268262FC08800A62D2D /* HYAudiovisualCommonManager.swift in Sources */,
+				9605B25C262FC08800A62D2D /* HYMediaCacheDelegate.swift in Sources */,
+				9605B261262FC08800A62D2D /* HYPlayerCommonConfig.swift in Sources */,
+				9605B26D262FC08800A62D2D /* HYFullScreenMaskView.swift in Sources */,
+				9605B264262FC08800A62D2D /* HYCacheStorage.swift in Sources */,
 				967BCCA9262D1EF0005987DA /* ViewController.swift in Sources */,
+				9605B259262FC08800A62D2D /* HYMediaCryptor.swift in Sources */,
 				967BCCC9262D32A9005987DA /* HttpManager.swift in Sources */,
+				9605B25E262FC08800A62D2D /* HYMediaCacheLocation.swift in Sources */,
+				9605B253262FC08800A62D2D /* HYPlayerCacheListView.swift in Sources */,
+				9605B26F262FC08800A62D2D /* HYAccelerationView.swift in Sources */,
+				9605B258262FC08800A62D2D /* HYMediaCacheManager.swift in Sources */,
+				9605B266262FC08800A62D2D /* HYPlayerCommonViewDelegate.swift in Sources */,
+				9605B26E262FC08800A62D2D /* HYControlPanelView.swift in Sources */,
+				9605B270262FC08800A62D2D /* HYAudioPlayView.swift in Sources */,
+				9605B262262FC08800A62D2D /* HYPlayerConstant.swift in Sources */,
+				9605B256262FC08800A62D2D /* HYResponseExpandButtton.swift in Sources */,
 				967BCCA5262D1EF0005987DA /* AppDelegate.swift in Sources */,
+				9605B26A262FC08800A62D2D /* HYSpeedyRemindView.swift in Sources */,
+				9605B263262FC08800A62D2D /* HYAudiovisualCommonModel.swift in Sources */,
 				967BCCAF262D1EF0005987DA /* jenkinsTest.xcdatamodeld in Sources */,
+				9605B257262FC08800A62D2D /* HYDefaultVideoCacheLocation.swift in Sources */,
+				9605B25A262FC08800A62D2D /* HYStorage.swift in Sources */,
+				9605B25D262FC08800A62D2D /* HYMediaCacherDelegate.swift in Sources */,
+				9605B265262FC08800A62D2D /* HYFileDirectory.swift in Sources */,
 				9605B0A9262D6DE000A62D2D /* M3u8ResourceLoader.swift in Sources */,
+				9605B252262FC08800A62D2D /* HYPlayerCacheListCell.swift in Sources */,
 				9605B084262D53DF00A62D2D /* VideoTableViewController.swift in Sources */,
+				9605B269262FC08800A62D2D /* HYMoreFunctionSpeedCollectionViewCell.swift in Sources */,
+				9605B271262FC08800A62D2D /* HYAudiovisualSpeedyManager.swift in Sources */,
+				9605B254262FC08800A62D2D /* HYCacheProgressView.swift in Sources */,
 				967BCCD6262D43F8005987DA /* ProtocolViewController.swift in Sources */,
+				9605B25F262FC08800A62D2D /* HYVideoCacheManager.swift in Sources */,
+				9605B26B262FC08800A62D2D /* HYEndPlayView.swift in Sources */,
+				9605B255262FC08800A62D2D /* String+HYEncryption.swift in Sources */,
+				9605B267262FC08800A62D2D /* HYPlayerCommonView.swift in Sources */,
 				967BCCA7262D1EF0005987DA /* SceneDelegate.swift in Sources */,
+				9605B26C262FC08800A62D2D /* HYWithoutNetView.swift in Sources */,
+				9605B25B262FC08800A62D2D /* HYMediaCacher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,11 +10,24 @@ import CoreData
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    var window: UIWindow?
+    
  
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //IOS13新增了UIStatusBarManager属性
+        /*
+        UIStatusBarManager *statusBarManager = [UIApplication sharedApplication].keyWindow.windowScene.statusBarManager;
+        id _statusBar = nil;
+        if ([statusBarManager respondsToSelector:@selector(createLocalStatusBar)]) {
+           UIView *_localStatusBar = [statusBarManager performSelector:@selector(createLocalStatusBar)];
+            if ([_localStatusBar respondsToSelector:@selector(statusBar)]) {
+               _statusBar = [_localStatusBar performSelector:@selector(statusBar)];
+            }
+        }
+         */
+         
         return true
     }
 

@@ -9,4 +9,7 @@ target 'jenkinsTest' do
 	pod 'Alamofire'
 	pod 'Kingfisher'
   pod 'WLM3U'
+  pod 'NicooPlayer', '~> 1.3.6'
+  # 网络检测
+  pod 'Reachability'
 end

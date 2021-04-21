@@ -20,7 +20,8 @@ class VideoTableViewController: UITableViewController {
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        self.playArray.append("系统播放")
+        self.playArray = ["系统播放","NicooPlayer","HYPlayer"]
+        
     }
     
     // MARK: - Table view data source
@@ -39,7 +40,7 @@ class VideoTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellid", for: indexPath) as! videoTypeCell
-        
+        cell.titleLab.text = self.playArray[indexPath.row]
         // Configure the cell...
         return cell
     }
@@ -48,6 +49,7 @@ class VideoTableViewController: UITableViewController {
         let sb = UIStoryboard.init(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "play") as! PlayViewController
         vc.titleStr = self.playArray[indexPath.row]
+        vc.type = indexPath.row
         vc.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(vc, animated: true)
     }
