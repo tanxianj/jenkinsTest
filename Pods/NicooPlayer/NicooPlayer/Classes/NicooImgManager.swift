@@ -27,79 +27,68 @@ public extension UIDevice {
     /// 判断是否为X系列
     ///
     /// - Returns: 兼容X系列手机
-    func isiPhoneXSeriesDevices() -> Bool {
-        return true
-//        return (iosType() == "iPhoneX" || iosType() == "iPhoneXS" || iosType() == "iPhoneXSMax" || iosType() == "iPhoneXR")
+    public func isiPhoneXSeriesDevices() -> Bool {
+        return (iosType() == "iPhoneX" || iosType() == "iPhoneXS" || iosType() == "iPhoneXSMax" || iosType() == "iPhoneXR")
     }
     /// 判断是否为iPhoneX
     ///
     /// - Returns: 兼容
-     func isiPhoneX() -> Bool {
-//        return iosType() == "iPhoneX"
-        return true
+    public func isiPhoneX() -> Bool {
+        return iosType() == "iPhoneX"
     }
     /// 判断是否为5S
     ///
     /// - Returns: 兼容
-     func isiPhone5S() -> Bool {
-//        return iosType() == "iPhone5S"
-        return true
+    public func isiPhone5S() -> Bool {
+        return iosType() == "iPhone5S"
     }
     /// 判断是否为6P
     ///
     /// - Returns: 兼容
-     func isiPhone6Plus() -> Bool {
-//        return iosType() == "iPhone6Plus"
-        return true
+    public func isiPhone6Plus() -> Bool {
+        return iosType() == "iPhone6Plus"
     }
     /// 判断是否为6
     ///
     /// - Returns: 兼容
-     func isiPhone6() -> Bool {
-//        return iosType() == "iPhone6"
-        return true
+    public func isiPhone6() -> Bool {
+        return iosType() == "iPhone6"
     }
     /// 判断是否为6S
     ///
     /// - Returns: 兼容
-     func isiPhone6s() -> Bool {
-//        return iosType() == "iPhone6S"
-        return true
+    public func isiPhone6s() -> Bool {
+        return iosType() == "iPhone6S"
     }
     /// 判断是否为6SP
     ///
     /// - Returns: 兼容
-     func isiPhone6SPlus() -> Bool {
-//        return iosType() == "iPhone6SPlus"
-        return true
+    public func isiPhone6SPlus() -> Bool {
+        return iosType() == "iPhone6SPlus"
     }
     /// 判断是否为SE
     ///
     /// - Returns: 兼容
-     func isiPhoneSE() -> Bool {
-//        return iosType() == "iPhoneSE"
-        return true
+    public func isiPhoneSE() -> Bool {
+        return iosType() == "iPhoneSE"
     }
     /// 判断是否为 模拟器(模拟器不区分型号)
     ///
     /// - Returns: 兼容
-     func isSimulator() -> Bool {
-//        return iosType() == "Simulator"
-        return true
+    public func isSimulator() -> Bool {
+        return iosType() == "Simulator"
     }
     /// 判断是否为7
     ///
     /// - Returns: 兼容
-     func isiPhone7() -> Bool {
-//        return iosType() == "iPhone7"
-        return true
+    public func isiPhone7() -> Bool {
+        return iosType() == "iPhone7"
     }
     /// 判断是否为7P
     ///
     /// - Returns: 兼容
-     func isiPhone7Plus() -> Bool {
-//        return iosType() == "iPhone7Plus"
-        return true
+    public func isiPhone7Plus() -> Bool {
+        return iosType() == "iPhone7Plus"
     }
     func iosType() -> String {
         var systemInfo = utsname()
@@ -133,7 +122,7 @@ public extension UIDevice {
     /// 兼容iPad
     ///
     /// - Returns: 判断是否为iPad
-     func isPad() -> Bool {
+    public func isPad() -> Bool {
         if UIDevice.current.userInterfaceIdiom == .pad {
             return true
         }

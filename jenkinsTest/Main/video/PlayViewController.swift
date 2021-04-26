@@ -370,6 +370,7 @@ extension PlayViewController:HYPlayerCommonViewDelegate{
     
     /** 隐藏控制台*/
     func hideControlPanel() {
+        videoView?.fullMaskView?.suggView.transform = .identity
         print("隐藏控制台")
     }
     

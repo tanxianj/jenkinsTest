@@ -62,7 +62,7 @@ open class NicooNetWorkAlert: UIView {
 public extension NicooNetWorkAlert {
     
     /// 展示
-    func showInWindow() {
+    public func showInWindow() {
         orientationSupport = NicooPlayerOrietation.orientationPortrait     ///这里展示无网操作时。将屏幕支持改为竖屏
         if let window = UIApplication.shared.keyWindow {
             if !window.subviews.contains(self) {
@@ -76,7 +76,7 @@ public extension NicooNetWorkAlert {
     
     /// 隐藏
     
-    func hideFromWindow() {
+    public func hideFromWindow() {
         if self.superview != nil {
             self.removeFromSuperview()
         }

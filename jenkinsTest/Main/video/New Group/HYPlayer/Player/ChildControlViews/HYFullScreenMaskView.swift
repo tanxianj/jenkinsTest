@@ -32,7 +32,7 @@ class HYFullScreenMaskView: UIView {
     /// 当前播放速度
     var currentSpeed: Float = 1
     /// 当前画面状态 0:铺满 1:自适应
-    var currentscreenStatus: Int = 1
+    var currentscreenStatus: Int = 0
     /// 倍速列表
     private let speedArray: [Float] = [0.75, 1.0, 1.5, 2.0]
     
@@ -118,7 +118,10 @@ class HYFullScreenMaskView: UIView {
         return collectionView
     }()
     
-    
+    var suggView:SuggestedVideosView = { () -> SuggestedVideosView in
+        let sug = UINib.init(nibName: "SuggestedVideosView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! SuggestedVideosView
+        return sug
+    }()
     override init(frame: CGRect) {
         super.init(frame: frame)
         clipsToBounds = true
@@ -175,6 +178,14 @@ class HYFullScreenMaskView: UIView {
             make.centerY.equalToSuperview()
             make.leading.equalTo(40)
             make.height.width.equalTo(30)
+        }
+//        suggView.delegate = self
+        addSubview(suggView)
+        suggView.snp.makeConstraints { (make) in
+            make.bottom.equalToSuperview().offset(-40)
+            make.left.equalTo(KScreenHeight - 100)
+            make.height.equalTo(120)
+            make.width.equalTo(KScreenHeight)
         }
     }
     
@@ -282,7 +293,10 @@ class HYFullScreenMaskView: UIView {
         }
     }
 }
-
+//MARK:SuggestedVideosBtnDelegate 显示与隐藏推荐视频
+//extension HYFullScreenMaskView:SuggestedVideosBtnDelegate{
+//
+//}
 //MARK: UICollectionViewDelegate
 extension HYFullScreenMaskView: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

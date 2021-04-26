@@ -194,6 +194,7 @@ class HYPlayerCommonView: UIView {
         fullMaskView = HYFullScreenMaskView()
         fullMaskView?.delegate = self
         let fullMaskTap = UITapGestureRecognizer.init(target: self, action: #selector(playerViewDidTapped))
+        fullMaskTap.delegate = self
         fullMaskView?.addGestureRecognizer(fullMaskTap)
         let fullMaskLongPress = UILongPressGestureRecognizer(target: self, action: #selector(playerViewLongPressed(_:)))
         fullMaskView?.addGestureRecognizer(fullMaskLongPress)
@@ -204,6 +205,7 @@ class HYPlayerCommonView: UIView {
         fullMaskView?.lockBtn.addTarget(self, action: #selector(fullScreenLockClicked), for: .touchUpInside)
         fullMaskView?.moreBtn.addTarget(self, action: #selector(fullScreenMoreClicked), for: .touchUpInside)
         fullMaskView?.isHidden = true
+        fullMaskView?.suggView.delegate = self
         addSubview(fullMaskView!)
         fullMaskView?.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
@@ -352,8 +354,10 @@ extension HYPlayerCommonView {
         } else {
             UIDevice.current.setValue(UIInterfaceOrientation.landscapeRight.rawValue, forKey: "orientation")
         }
-        
-        playerLayer?.frame = manager?.getVideoFrame() ?? CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
+        //自适应
+//        playerLayer?.frame = manager?.getVideoFrame() ?? CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
+        // 画面铺满
+        playerLayer?.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height)
         
         
         fullMaskView?.isHidden = false
@@ -573,10 +577,12 @@ extension HYPlayerCommonView {
             if !isLock {
                 controlPanel.isHidden = true
                 fullMaskView?.naviView.isHidden = true
+                fullMaskView?.suggView.isHidden = true
                 fullMaskView?.hidMoreFunctionView()
             } else {
                 controlPanel.isHidden = false
                 fullMaskView?.naviView.isHidden = false
+                fullMaskView?.suggView.isHidden = false
             }
             
             manager?.resetHideTimer()
@@ -640,7 +646,6 @@ extension HYPlayerCommonView {
     }
     
 }
-
 //MARK: 更多功能调整
 extension HYPlayerCommonView: HYFullScreenMaskViewDelegate {
     /** 更改播放器播放速度*/
@@ -756,4 +761,32 @@ extension HYPlayerCommonView: AVPictureInPictureControllerDelegate {
     func pictureInPictureController(_ pictureInPictureController: AVPictureInPictureController, restoreUserInterfaceForPictureInPictureStopWithCompletionHandler completionHandler: @escaping (Bool) -> Void) {
         print("关闭画中画且恢复播放界面")
     }
+}
+extension HYPlayerCommonView:SuggestedVideosBtnDelegate{
+    func show(){
+        self.manager?.hideTimer?.invalidate()
+        UIView.animate(withDuration: 0.2) {
+            self.fullMaskView?.suggView.transform = CGAffineTransform(translationX: -(KScreenHeight - 100), y: 0)
+        }
+    }
+    func hidden(){
+        self.manager?.resetHideTimer()
+        UIView.animate(withDuration: 0.2) {
+            self.fullMaskView?.suggView.transform = .identity
+        }
+    }
+    
+}
+extension HYPlayerCommonView:UIGestureRecognizerDelegate{
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        let touchClass = NSStringFromClass(touch.view!.classForCoder)
+        let supClass = NSStringFromClass((touch.view?.superview!.superview?.superview?.classForCoder)!)
+
+        print("当前点击的视图 \(touchClass) \(supClass)")
+        if touchClass.hasPrefix("UICollectionView") || supClass.hasPrefix("UICollectionView"){
+            return false
+        }
+        return true
+    }
+    
 }

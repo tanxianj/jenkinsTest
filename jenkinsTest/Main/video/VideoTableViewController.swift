@@ -20,7 +20,7 @@ class VideoTableViewController: UITableViewController {
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        self.playArray = ["系统播放","NicooPlayer","HYPlayer"]
+        self.playArray = ["系统播放","NicooPlayer","HYPlayer","抖音播放"]
         
     }
     
@@ -46,12 +46,24 @@ class VideoTableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("点击 \(indexPath.row)")
+        
         let sb = UIStoryboard.init(name: "Main", bundle: nil)
-        let vc = sb.instantiateViewController(withIdentifier: "play") as! PlayViewController
-        vc.titleStr = self.playArray[indexPath.row]
-        vc.type = indexPath.row
-        vc.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(vc, animated: true)
+        
+        switch indexPath.row {
+        case 3:
+            let douying = sb.instantiateViewController(withIdentifier: "douyin") as! DouYinTableViewController
+            douying.hidesBottomBarWhenPushed = true
+            let nav = UINavigationController.init(rootViewController: douying)
+            self.navigationController?.pushViewController(douying, animated: true)
+            return
+        default:
+            let vc = sb.instantiateViewController(withIdentifier: "play") as! PlayViewController
+            vc.titleStr = self.playArray[indexPath.row]
+            vc.type = indexPath.row
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+        
     }
     
     /*

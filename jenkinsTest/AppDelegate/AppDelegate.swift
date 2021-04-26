@@ -15,6 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
  
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        UITableViewCell.appearance().selectionStyle = .none
         // Override point for customization after application launch.
         //IOS13新增了UIStatusBarManager属性
         /*

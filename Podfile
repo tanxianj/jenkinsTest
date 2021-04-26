@@ -12,4 +12,6 @@ target 'jenkinsTest' do
   pod 'NicooPlayer', '~> 1.3.6'
   # 网络检测
   pod 'Reachability'
+  #加密
+#  pod 'CryptoSwift', '~> 1.3.8'
 end
